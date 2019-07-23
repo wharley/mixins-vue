@@ -49,8 +49,8 @@ export default {
   },
   async beforeMount() {
     await Promise.all([
-      this.getData('manufacturers', 10000),
-      this.getData('pods', 20000)
+      this.getData('manufacturers'),
+      this.getData('pods')
     ])
 
   }
